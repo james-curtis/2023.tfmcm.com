@@ -8,7 +8,7 @@
 
 # Local History for Visual Studio Code
 .history/
-
+.emf
 # Built Visual Studio Code Extensions
 *.vsix
 

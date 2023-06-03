@@ -29,3 +29,12 @@ def exportEmf(savePath, plotName, fig=None, keepSVG=True):
 
     if not keepSVG:
         os.system('del "{}"'.format(svgFile))
+
+
+def convertEmf(path: str) -> str:
+    file_name = os.path.basename(path)
+    file_name_without_extension, file_extension = os.path.splitext(file_name)
+    dir_name = os.path.dirname(path)
+    emfFile = f'{dir_name}/{file_name_without_extension}.emf'
+    subprocess.run([inkscapePath, path, '--export-filename', emfFile])
+    return emfFile
