@@ -35,6 +35,8 @@ plotly = "^5.14.1"
 kaleido = "0.2.1"
 librosa = "^0.10.0.post2"
 tqdm = "^4.65.0"
+pywavelets = "^1.4.1"
+imbalanced-learn = "^0.10.1"
 
 
 [build-system]
